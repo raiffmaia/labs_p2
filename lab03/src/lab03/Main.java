@@ -35,6 +35,7 @@ public class Main {
 			if (opcao.equals("E")) {
 				System.out.print("contato> ");
 				int posicaoContato = sc.nextInt();
+				sc.nextLine();
 				agenda.posicaoContato(posicaoContato);
 			}
 			if (opcao.equals("L")) {

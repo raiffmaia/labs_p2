@@ -13,16 +13,18 @@ public class Agenda {
 	}
 
 	public void listaContatos() {
-		for(int i = 0; i < this.listaContatos.length; i++) {
-			System.out.println((i + 1) + " " + "-" + " " + listaContatos[i].getnome());	
+		for (int i = 0; i < this.listaContatos.length; i++) {
+			if (!(listaContatos[i] == null)) {
+				System.out.println((i + 1) + " " + "-" + " " + listaContatos[i].getnome());
+			}
 		}
 	}
 
-	public String posicaoContato(int posicao) {
+	public void posicaoContato(int posicao) {
 		if (!(listaContatos[posicao - 1] == null)) {
-			return listaContatos[posicao - 1].toString();
+			System.out.println(listaContatos[posicao - 1].toString()); 
 		} else {
-			return "POSIÇÃO INVÁLIDA!";
+			System.out.println( "POSIÇÃO INVÁLIDA!");
 		}
 	}
 
